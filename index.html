@@ -4,13 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kruti Patel — Portfolio</title>
+  <meta name="description" content="Kruti Patel — .NET Developer with 11+ years experience in .NET Core, C#, Web API, SQL Server, Azure DevOps.">
+  <meta property="og:title" content="Kruti Patel — .NET Developer">
+  <meta property="og:description" content="Experienced .NET Developer delivering enterprise applications, reporting and integrations.">
+  <meta property="og:image" content="/assets/og-image.svg">
+  <meta property="og:url" content="https://kcp0114.github.io/kpatelPortfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  { "@context":"https://schema.org","@type":"Person","name":"Kruti Patel","jobTitle":".NET Developer","url":"https://kcp0114.github.io/kpatelPortfolio/","sameAs":["https://www.linkedin.com/in/kruti-patel-24235410a/","https://github.com/kcp0114"] }
+  </script>
 </head>
 <body>
   <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
 
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
     <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
     <nav class="nav">
       <ul>
@@ -26,47 +36,48 @@
   <main class="content">
     <section id="about" class="hero-card card">
       <div class="avatar-wrap">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80&auto=format&fit=crop" alt="Kruti Patel" class="avatar">
+        <img src="/assets/avatar.jpg" alt="Kruti Patel portrait" class="avatar" loading="lazy" width="160" height="160">
       </div>
       <h1 class="name">KRUTI PATEL</h1>
-      <p class="lead">.NET Developer / Application Specialist with 11+ years designing, developing, integrating and supporting enterprise applications using .NET Core, C#, ASP.NET Web API, REST APIs, SQL Server, Azure DevOps, SharePoint, and Python. Experienced across full SDLC and Agile methodologies.</p>
+      <p class="lead">.NET Developer / Application Specialist with 11+ years designing, developing, integrating and supporting enterprise applications using .NET Core, C#, ASP.NET Web API, REST APIs, SQL Server, Azure DevOps, SharePoint and Python. Experienced across full SDLC and Agile methodologies.</p>
 
       <div class="hero-actions">
+        <a class="btn" href="/resume.pdf" download>Download Resume</a>
         <a class="btn" href="#resume">View Resume →</a>
         <a class="btn ghost" href="#projects">Featured Projects</a>
       </div>
 
       <div class="contact-inline">
         <div>(647) 688 5088</div>
-        <div>krutipatel1181@gmail.com</div>
-        <div><a href="https://www.linkedin.com/in/kruti-patel-24235410a/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div><a href="mailto:krutipatel1181@gmail.com">krutipatel1181@gmail.com</a></div>
+        <div class="social"><a href="https://www.linkedin.com/in/kruti-patel-24235410a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/kcp0114" target="_blank" rel="noopener">GitHub</a></div>
       </div>
     </section>
 
     <section id="projects" class="projects-card card">
       <h2>Featured Projects</h2>
-      <p class="sub">Selected projects and examples of work — replace these with your real project links/screenshots.</p>
+      <p class="sub">Selected projects and examples of work — click any to see a short case study.</p>
 
       <div class="projects-grid">
         <article class="project">
-          <img src="https://images.unsplash.com/photo-1526378723429-4b6b2a5f0f1b?w=800&q=60&auto=format&fit=crop" alt="Wellness Expense">
+          <img src="/assets/wellness-800.webp" srcset="/assets/wellness-400.webp 400w, /assets/wellness-800.webp 800w" sizes="(max-width:600px) 100vw, 33vw" alt="Wellness Expense Reporting dashboard" loading="lazy" width="800" height="450">
           <h3>Wellness Expense Reporting</h3>
-          <p>Built using .NET Core, C#, REST APIs, HTML5, JavaScript, jQuery, Bootstrap and SQL Server — implemented reporting, workflows, and integrations.</p>
-          <a class="link" href="#">View more →</a>
+          <p>Built using .NET Core, C#, REST APIs, HTML5, JavaScript and SQL Server — implemented reporting, workflows, and integrations.</p>
+          <a class="link" href="/projects/wellness.html">View more →</a>
         </article>
 
         <article class="project">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&q=60&auto=format&fit=crop" alt="Integration work">
+          <img src="/assets/imanage-800.webp" srcset="/assets/imanage-400.webp 400w, /assets/imanage-800.webp 800w" sizes="(max-width:600px) 100vw, 33vw" alt="iManage integration diagram" loading="lazy" width="800" height="450">
           <h3>iManage Integration</h3>
           <p>Integration builder and data mapping from iManage into SQL Server using Python and REST APIs.</p>
-          <a class="link" href="#">View more →</a>
+          <a class="link" href="/projects/imanage.html">View more →</a>
         </article>
 
         <article class="project">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=60&auto=format&fit=crop" alt="Azure migrations">
+          <img src="/assets/cloud-800.webp" srcset="/assets/cloud-400.webp 400w, /assets/cloud-800.webp 800w" sizes="(max-width:600px) 100vw, 33vw" alt="Cloud modernization illustration" loading="lazy" width="800" height="450">
           <h3>Cloud Modernization</h3>
-          <p>Azure DevOps migration work for SQL data and internal applications; re-architected legacy applications to be cloud-ready.</p>
-          <a class="link" href="#">View more →</a>
+          <p>Azure DevOps migration for SQL data and internal applications; re-architected legacy apps to be cloud-ready.</p>
+          <a class="link" href="/projects/cloud.html">View more →</a>
         </article>
       </div>
 
@@ -141,13 +152,15 @@
           </div>
         </div>
       </div>
+
+      <p style="margin-top:18px"><a class="btn" href="/resume.pdf" download>Download Resume (PDF)</a></p>
     </section>
 
     <section id="contact" class="card contact-card">
       <h2>Contact</h2>
       <p>Phone: (647) 688 5088 · Email: <a href="mailto:krutipatel1181@gmail.com">krutipatel1181@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/kruti-patel-24235410a/" target="_blank" rel="noopener">kruti-patel-24235410a</a></p>
-      <p class="small">Replace contact links and add a downloadable PDF resume if you want a “Download Resume” button.</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/kruti-patel-24235410a/" target="_blank" rel="noopener">kruti-patel-24235410a</a> · GitHub: <a href="https://github.com/kcp0114" target="_blank" rel="noopener">kcp0114</a></p>
+      <p class="small">This site includes placeholder images and a placeholder resume PDF — replace them in the repo's /assets and root with your real files.</p>
     </section>
   </main>
 
