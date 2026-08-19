@@ -3,6 +3,8 @@ const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 const stored = localStorage.getItem('theme');
 if (stored === 'light') body.classList.add('light-theme');
+// initialize button text based on current theme
+if (body.classList.contains('light-theme')) themeToggle.textContent = '☀️';
 
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('light-theme');
@@ -29,3 +31,5 @@ if (hamburger) {
     s.classList.toggle('open');
   });
 }
+
+// Analytics placeholder: add your analytics snippet here if needed

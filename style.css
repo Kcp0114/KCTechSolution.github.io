@@ -143,6 +143,12 @@ body{
 /* Contact card */
 .contact-card .small{color:var(--muted);font-size:13px;margin-top:8px}
 
+/* small accessibility focus */
+a:focus, button:focus { outline:3px solid rgba(91,123,213,0.22); outline-offset:3px; }
+
+/* social links */
+.social a{color:var(--accent);text-decoration:none;font-weight:600}
+
 /* Responsive */
 @media (max-width:900px){
   .projects-grid{grid-template-columns:repeat(2,1fr)}

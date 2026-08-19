@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kcp0114.github.io/kpatelPortfolio/sitemap.xml
